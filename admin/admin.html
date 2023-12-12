@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers - Admin's Home</title>
+    <!-- design CSS -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <!-- Fonts -->
+        <!-- chữ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <!-- icon -->
+        <link rel="stylesheet" href="./assets/font/font-icon/fontawesome-free-6.4.2-web/css/all.min.css">
+        <link  rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- HEADER -->
+        <header class="header">
+            <!-- Thanh bar phụ -->
+            <nav class="header__navbar">
+                <!-- Go to shop -->
+                <div class="header__cart">
+                    <!-- <a href="/user/index.html" class="header__cart-wrap">
+                        <span class="header__cart-title">Go to shop</span>
+                    </a> -->
+                </div>
+                <!-- End Go to shop -->
+                <!-- Bar 2 -->
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-regular fa-bell"></i>
+                            Notify
+                        </a>
+                        <!-- Trong thanh thông báo -->
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>New notify</h3>
+                            </header>
+                            <!-- DS thông báo -->
+                            <div class="header__notify-list header__notify-nothing">
+                                <div class="header__notify-info">
+                                    <span class="header__notify-nothing__text">
+                                        Nothing here...
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Kết thúc DS thông báo -->
+                            <footer class="header__notify-footer">
+                                <a href="" class="header__notify-footer-btn">See all</a>
+                            </footer>
+                        </div>
+                        <!-- End thanh thông báo -->
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                            Help
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-user">
+                        <img src="./assets/img/avt_user/3.jpeg" alt="" class="header__navbar-user-img">
+                        <span class="header__navbar-user-name">Omyne2338</span>
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item">
+                                <a href="" class="header__navbar-user-item-link">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>My Account</span>
+                                </a>
+                            </li>
+                            <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                <a href="login.html" class="header__navbar-user-item-link">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <span>Log out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- End Bar 2 -->
+            </nav>
+            <!-- End thanh bar phụ -->
+            <!-- Banner slogan -->
+            <a href="admin.html">
+                <div class="header__slogan"></div>
+            </a>
+            <!-- End banner slogan -->
+        </header>
+        <!-- END HEADER -->
+
+        <!-- Thanh bar chính -->
+        <nav class="header__main-navbar">
+            <!-- Bar 1 -->
+            <input class="header-navbar__item header__navbar-category-phu" type="checkbox" id="toggle1">
+            <label for="toggle1" class="header__navbar-category-phu-label">
+                <span>Flowers</span>
+                <i class="fa-solid fa-layer-group"></i>
+            </label>
+            <div class="header__navbar-category-slidebar">
+                <div class="slidebar-category">
+                    <a href="admin.html" class="slidebar-category-header__link">
+                        <div class="slidebar-header">
+                            <i class="fa-solid fa-house"></i>
+                            <h3>- Flowers -</h3>
+                            <span>Home Page</span>
+                        </div>
+                    </a>
+                    <div class="slidebar-content">
+                        <!-- <div class="slidebar-profile">
+                            <div class="profile-img" style="background-image: url(./assets/img/avt_user/3.jpeg)"></div>
+                            <h4>David Green</h4>
+                        </div> -->
+                        <div class="slidebar-menu">
+                            <!-- List Manage -->
+                            <ul class="slidebar-menu__list">
+                                <li class="slidebar-menu__list-item">
+                                    <a href="business.html"  class="slidebar-menu__list-item__link">
+                                        <i class="fa-solid fa-chart-simple"></i>
+                                        <small>Business Situation</small>
+                                    </a>
+                                </li>
+                                <li class="slidebar-menu__list-item">
+                                    <a href="manage_user.html"  class="slidebar-menu__list-item__link">
+                                        <i class="fa-solid fa-user"></i>
+                                        <small>User Management</small>
+                                    </a>
+                                </li>
+                                <li class="slidebar-menu__list-item">
+                                    <a href="edit_product.html"  class="slidebar-menu__list-item__link">
+                                        <i class="fa-solid fa-box-open"></i>
+                                        <small>Product Management</small>
+                                    </a>
+                                </li>
+                                <li class="slidebar-menu__list-item">
+                                    <a href="manage_order.html"  class="slidebar-menu__list-item__link">
+                                        <i class="fa-solid fa-file-invoice"></i>
+                                        <small>Order Management</small>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- End list manage -->
+                            <!-- List setting -->
+                            <ul class="slidebar-menu__list">
+                                <li class="slidebar-menu__list-item2">
+                                    <a href=""  class="slidebar-menu__list-item__link">
+                                        <small>Setting</small>
+                                        <i class="fa-solid fa-gear"></i>
+                                    </a>
+                                </li>
+                                <li class="slidebar-menu__list-item2">
+                                    <a href="login.html"  class="slidebar-menu__list-item__link">
+                                        <small>Log out</small>
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- End list setting -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Bar 1 -->
+            <!-- Bar 2 goc phai -->
+            <div class="header-navbar__item header__gocphai">
+                <!-- Search -->
+                <div class="header__search">
+                    <a href="">
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </a>
+                    <div class="header__khung-search">
+                        <input type="text" class="header__search-input" placeholder="Type to search..." 
+                        style=" white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis; 
+                                font-family: 'Comfortaa', sans-serif;"
+                        >
+                    </div>
+                </div>
+                <!-- End Search -->
+                <!-- Account -->
+                <div class="header__account">
+                    <a href="" class="account-avt-link">
+                        <img src="./assets/img/avt_user/3.jpeg" alt="" class="account-avt-img">
+                    </a>
+                </div>
+                <!-- Account -->
+            </div>
+            <!-- End bar 2 goc phai -->
+        </nav>
+        <!-- End thanh bar chính -->
+
+        <!-- CONTAINER -->
+        <div class="container">
+            <div class="page-content">
+                <!-- Card item -->
+                <div class="analytics">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>107,200</h2>
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="card-progress">
+                            <small>User activity this month</small>
+                            <div class="card-indicator">
+                                <div class="indicator one" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>340,230</h2>
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <div class="card-progress">
+                            <small>Page views</small>
+                            <div class="card-indicator">
+                                <div class="indicator two" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>$653,200</h2>
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="card-progress">
+                            <small>Monthly revenue growth</small>
+                            <div class="card-indicator">
+                                <div class="indicator three" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>47,500</h2>
+                            <i class="fa-solid fa-envelopes-bulk"></i>
+                        </div>
+                        <div class="card-progress">
+                            <small>New E-mails received</small>
+                            <div class="card-indicator">
+                                <div class="indicator four" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End card -->
+            </div>
+            <div class="grid__row container__content">
+                <div class="content-title">
+                    <h1>Best Seller of month</h1>
+                </div>
+                <div class="grid__column-12_12 container__user">
+                    <!-- Chosen -->
+                    <div class="content-more">
+                        <div class="content-header">
+                            <div  class="container__header-view">
+                                <span class="container__header-view-label">View from date: </span>
+                                <select name="date" id="" class="container__header-view-choose">
+                                    <option value="">Before Jun 12</option>
+                                    <option value="">Jun 12 to Aug 12</option>
+                                    <option value="">Aug 12 to Oct 12</option>
+                                    <option value="">Oct 12 to Now</option>
+                                </select>
+                                <!-- <div class="browse"> -->
+                                    <span class="container__header-view-label">Choose category: </span>
+                                    <select name="category" id="" class="container__header-view-choose">
+                                        <option value="">Flowers</option>
+                                        <option value="">Occasions</option>
+                                        <option value="">Gifts</option>
+                                    </select>
+                                    <input type="search" placeholder="Search product..." class="record-search">
+                                    <button class="container__header-view-btn btn btn--primary">View</button>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Table -->
+                    <table class="cart-product__table">
+                        <thead  class="container__content-table_heading">
+                        <thead>
+                            <tr>
+                                <th class="cart__header cart-product-name">Category</th>
+                                <th class="cart__header cart-product-stt">Product</th>
+                                <th class="cart__header cart-product-name">Price</th>
+                                <th class="cart__header cart-product-status">Total of sales</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- List 1 -->
+                            <tr class="content-table__list">
+                                <td class="cart__body product__item-price">
+                                    <span>Flowers</span>
+                                </td>
+                                <td class="content-table__list-item">
+                                    <a href="details_product.html" class="product__item-link product__item-sanpham-details">
+                                        <img src="./assets/img/sanpham/hoa-tim.jpg" alt="baby-breath-bouquet" class="product__item-img">
+                                        <div class="product__item-name">
+                                            <h4 class="product__item-title">Baby's Breath Bouquet</h4>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td class="cart__body product__item-price">
+                                    <span>$75.00</span>
+                                </td>
+                                <td class="content-table__list-item">
+                                    <span>89</span>
+                                </td>
+                            </tr>
+                            <!-- End List 1 -->
+                            <!-- List 2 -->
+                            <tr class="content-table__list">
+                                <td class="cart__body product__item-price">
+                                    <span>Flowers</span>
+                                </td>
+                                <td class="content-table__list-item">
+                                    <a href="details_product.html" class="product__item-link product__item-sanpham-details">
+                                        <img src="./assets/img/cart-list-sp/baby-breath-bouquet.webp" alt="baby-breath-bouquet" class="product__item-img">
+                                        <div class="product__item-name">
+                                            <h4 class="product__item-title">Baby's Breath Bouquet</h4>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td class="cart__body product__item-price">
+                                    <span>$75.00</span>
+                                </td>
+                                <td class="content-table__list-item">
+                                    <span>89</span>
+                                </td>
+                            </tr>
+                            <!-- End List 2 -->
+                            <tr class="content-table__list">
+                                <td class="cart__body product__item-price">
+                                    <span>Flowers</span>
+                                </td>
+                                <td class="content-table__list-item">
+                                    <a href="details_product.html" class="product__item-link product__item-sanpham-details">
+                                        <img src="./assets/img/cart-list-sp/baby-breath-bouquet.webp" alt="baby-breath-bouquet" class="product__item-img">
+                                        <div class="product__item-name">
+                                            <h4 class="product__item-title">Baby's Breath Bouquet</h4>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td class="cart__body product__item-price">
+                                    <span>$75.00</span>
+                                </td>
+                                <td class="content-table__list-item">
+                                    <span>89</span>
+                                </td>
+                            </tr>
+                            <tr class="content-table__list">
+                                <td class="cart__body product__item-price">
+                                    <span>Flowers</span>
+                                </td>
+                                <td class="content-table__list-item">
+                                    <a href="details_product.html" class="product__item-link product__item-sanpham-details">
+                                        <img src="./assets/img/cart-list-sp/baby-breath-bouquet.webp" alt="baby-breath-bouquet" class="product__item-img">
+                                        <div class="product__item-name">
+                                            <h4 class="product__item-title">Baby's Breath Bouquet</h4>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td class="cart__body product__item-price">
+                                    <span>$75.00</span>
+                                </td>
+                                <td class="content-table__list-item">
+                                    <span>89</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+        
+        <!-- FOOTER -->
+        <footer class="footer">
+            <!-- Row 1 -->
+            <div class="grid">
+                <div class="grid__row">
+                    <!-- P1 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Looking for help ?</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Help center</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Shopping guide</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Site map</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Product recalls</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Advice before you buy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P1 -->
+                    <!-- P2 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Delivery & Returns</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Where's my order?</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Delivery & collection</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Same Day Delivery</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Recycle your packaging</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P2 -->
+                    <!-- P3 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Customer Service</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">FAQs</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Payment Options</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">100% Guarantee</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Corporate Orders</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P3 -->
+                    <!-- P4 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Policies</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Privacy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Returns and Refunds</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Substitution</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Security</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P4 -->
+                    <!-- P5 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Follow us on</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P5 -->
+                </div>
+            </div>
+            <!-- End row 1 -->
+            <!-- Row 2 -->
+            <div class="footer__bottom">
+                <div class="grid">
+                    <!-- <i class="fa-regular fa-copyright"></i> -->
+                    <p class="footer__text">Contact us: 1900 633 045 | help@flowers.vn</p>
+                    <p class="footer__text"> <span>©</span> 2023 - By Flowers</p>
+                </div>
+            </div>
+            <!-- End row 2 -->
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+</body>
+</html>

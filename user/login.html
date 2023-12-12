@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers - Log in</title>
+    <!-- design CSS -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="login.css">
+    <!-- Fonts -->
+        <!-- chữ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <!-- icon -->
+        <link rel="stylesheet" href="./assets/font/font-icon/fontawesome-free-6.4.2-web/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- HEADER -->
+        <header class="header">
+            <!-- Thanh bar phụ -->
+            <nav class="header__navbar">
+                <!-- Bar 1 -->
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--separate">
+                        <span>HOTLINE: 1900 633 045</span>
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header__navbar-title--no-pointer">Contact us :</span>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-regular fa-envelope"></i>
+                            <span>help@flowers.vn</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End Bar 1 -->
+                <!-- Bar 2 -->
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-regular fa-bell"></i>
+                            Notify
+                        </a>
+                        <!-- Trong thanh thông báo -->
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>New notify</h3>
+                            </header>
+                            <!-- DS thông báo -->
+                            <div class="header__notify-list header__notify-nothing">
+                                <div class="header__notify-info">
+                                    <span class="header__notify-nothing__text">
+                                        Log in to see the latest notifications!
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Kết thúc DS thông báo -->
+                            <footer class="header__notify-footer">
+                                <a href="" class="header__notify-footer-btn">See all</a>
+                            </footer>
+                        </div>
+                        <!-- End thanh thông báo -->
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                            Help
+                        </a>
+                    </li>
+                    <!-- Khi chưa login tài khoản -->
+                    <li class="login">
+                        <a href="login.html" class="header__navbar-item header__navbar-item__strong header__navbar-item--separate">Log in</a>
+                    </li>
+                    <li class="signup">
+                        <a href="signup.html" class="header__navbar-item header__navbar-item__strong">Log out</a>
+                    </li>
+                    <!-- End chưa login tài khoản -->
+                </ul>
+                <!-- End Bar 2 -->
+            </nav>
+            <!-- End thanh bar phụ -->
+            <!-- Banner slogan -->
+            <a href="index.html">
+                <div class="header__slogan"></div>
+            </a>
+            <!-- End banner slogan -->
+        </header>
+        <!-- END HEADER -->
+
+        <!-- Thanh bar chính -->
+        <nav class="header__main-navbar">
+            <!-- Search -->
+            <div class="header__search">
+                <a href="search_advanced.html">
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </a>
+                <!-- Search History -->
+                <div class="header__khung-search">
+                    <input type="text" class="header__search-input" placeholder="Type to search..." 
+                    style=" white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                            font-family: 'Comfortaa', sans-serif;"
+                    >
+                    <div class="header__search-history">
+                        <h3 class="header__search--history-heading">History</h3>
+                        <ul class="header__search-history-list">
+                            <li class="header__search-history-item">
+                                <a href="">small flower for Christmas/a>
+                            </li>
+                            <li class="header__search-history-item">
+                                <a href="">White tulip</a>
+                            </li>
+                            <li class="header__search-history-item">
+                                <a href="">Birthday's flower</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Search History -->
+            </div>
+            <!-- End search -->
+            <!-- Menu -->
+            <ul class="header__main-navbar-list">
+                <li class="header__main-navbar-item">
+                    <a href="index.html" class="main-navbar__link">
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li class="header__main-navbar-item header__main-navbar-more">
+                    <a href="flowers.html" class="main-navbar__link">
+                        <span>FLOWERS</span>
+                        <i class="header__main-navbar-icon fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="header__main-navbar-item__list">
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Tulips</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Roses</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Lilis</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Baby Flowers</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__main-navbar-item header__main-navbar-more">
+                    <a href="flowers.html" class="main-navbar__link">
+                        <span>OCCASIONS</span>
+                        <i class="header__main-navbar-icon fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="header__main-navbar-item__list">
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Birthday</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Anniversary</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Graduation</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Thank you</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__main-navbar-item header__main-navbar-more">
+                    <a href="flowers.html" class="main-navbar__link">
+                        <span>GIFT</span>
+                        <i class="header__main-navbar-icon fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="header__main-navbar-item__list">
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Chocolate</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Bear</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Balloon</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Card</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__main-navbar-item">
+                    <a href="" class="main-navbar__link">
+                        <span>ABOUT US</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- End menu -->
+            <!-- Cart -->
+            <div class="header__cart">
+                <div class="header__cart-wrap">
+                    <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                    <!-- No Cart (header__cart-list-no-cart) -->
+                    <span class="header__cart-notice">0</span>
+                    <div class="header__cart-list header__cart-list-no-cart">
+                        <img src="./assets/img/cart-rong/gioHangRong.png" alt="Giỏ hàng trống" class="header__cart-no-cart-img">
+                        <span class="header__cart-list-no-cart-mess">
+                            You don't have any product. Buy something!
+                        </span>
+                    </div>
+                    <!-- End No Cart -->
+                    <!-- Cart has Product -->
+                    <span class="header__cart-title">My Cart</span>
+                </div>
+            </div>
+            <!-- End cart -->
+        </nav>
+        <!-- End thanh bar chính -->
+
+        <!-- CONTAINER -->
+        <div class="container">
+            <div class="grid">
+                <!-- Phần chính -->
+                <div class="grid__row container__content">
+                    <form class="content-form">
+                        <div class="content-form-label">
+                            <h1>Log in</h1>
+                        </div>
+                        <div class="content-form-name">
+                            <label for="uname">
+                                <b>Username <span>*</span> </b>
+                            </label>
+                            <input title="Please fill in this form!" class="content-form__input" type="text" placeholder="Enter your username or email:" name="uname" required>
+                        </div>
+                        <div class="content-form-pass">
+                            <label for="psw">
+                                <b>Password <span>*</span> </b>
+                            </label>
+                            <input title="Please fill in this form!" class="content-form__input" type="password" placeholder="Enter your password:" name="psw" required>
+                            <a href="#" class="content-form-forgotpw">
+                                <span>Forgot your password?</span>
+                            </a>
+                        </div>
+                        <a href="index.html" class="content-form-btn-link">
+                            <button type="submit" class="content-form-btn btn btn--primary">Log in</button>
+                        </a>
+                        <div class="content-form-extra">
+                            <h5>You don't have an account? <a href="signup.html">Sign in here.</a></h5>
+                            <h6>Or</h6>
+                            <h5>Click <a href="index.html">here</a> to shopping without account</h5>
+                        </div>
+                    </form>
+                </div>
+                <!-- End phần chính -->
+                <!-- Phần extra -->
+                <div class="grid__row container__extra">
+                    <div class="container__text">
+                        <div class="container__extra-title">
+                            <i class="container__extra-icon fa-regular fa-envelope"></i>
+                            <span>Don’t miss out</span>
+                        </div>
+                        <div class="container__extra-content">
+                            <p>Register to receive exclusive offers tailored to you, plus rewards and promotions before anyone else. Just select ‘YES’ on the next page and never miss a thing.</p>
+                        </div>
+                    </div>
+                    <!-- Khung enter email -->
+                    <div class="container__extra-khung-mail">
+                        <div class="container__extra-email">
+                            <input type="text" class="container__extra-email-input" placeholder="Write your email address here..." 
+                            style=" white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis; 
+                                    font-family: 'Comfortaa', sans-serif;"
+                            >
+                        </div>
+                        <button class="container__extra-email-btn btn btn--primary">
+                            <a href="" class="container__extra-email-link">Get Started</a>
+                        </button>
+                    </div>
+                    <!-- End email -->
+                </div>
+                <!-- End phần extra -->
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <!-- Row 1 -->
+            <div class="grid">
+                <div class="grid__row">
+                    <!-- P1 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Looking for help ?</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Help center</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Shopping guide</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Site map</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Product recalls</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Advice before you buy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P1 -->
+                    <!-- P2 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Delivery & Returns</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Where's my order?</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Delivery & collection</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Same Day Delivery</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Recycle your packaging</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P2 -->
+                    <!-- P3 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Customer Service</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">FAQs</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Payment Options</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">100% Guarantee</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Corporate Orders</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P3 -->
+                    <!-- P4 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Policies</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Privacy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Returns and Refunds</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Substitution</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Security</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P4 -->
+                    <!-- P5 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Follow us on</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P5 -->
+                </div>
+            </div>
+            <!-- End row 1 -->
+            <!-- Row 2 -->
+            <div class="footer__bottom">
+                <div class="grid">
+                    <!-- <i class="fa-regular fa-copyright"></i> -->
+                    <p class="footer__text">Contact us: 1900 633 045 | help@flowers.vn</p>
+                    <p class="footer__text"> <span>©</span> 2023 - By Flowers</p>
+                </div>
+            </div>
+            <!-- End row 2 -->
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+</body>
+</html>

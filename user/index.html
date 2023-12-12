@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers - Home</title>
+    <!-- design CSS -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Fonts -->
+        <!-- chữ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <!-- icon -->
+        <link rel="stylesheet" href="./assets/font/font-icon/fontawesome-free-6.4.2-web/css/all.min.css">
+        <link  rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- HEADER -->
+        <header class="header">
+            <!-- Thanh bar phụ -->
+            <nav class="header__navbar">
+                <!-- Bar 1 -->
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--separate">
+                        <span>HOTLINE: 1900 633 045</span>
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header__navbar-title--no-pointer">Contact us :</span>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-regular fa-envelope"></i>
+                            <span>help@flowers.vn</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End Bar 1 -->
+                <!-- Bar 2 -->
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-regular fa-bell"></i>
+                            Notify
+                        </a>
+                        <!-- Trong thanh thông báo -->
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>New notify</h3>
+                            </header>
+                            <!-- DS thông báo -->
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./assets/img/sanpham/bo-hoa-thach-thao-tim-miracle.jpg" alt="Ohui" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">(NEW) Miracle - The Embodiment of Love</span>
+                                            <span class="header__notify-description">The Miracle bouquet, designed with purple statice flowers, symbolizes everlasting love, cuteness, strength, and miracles…</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./assets/img/sanpham/hoa-tim.jpg" alt="Ohui" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Revealing the super easy secret to keeping flowers fresh that not everyone knows</span>
+                                            <span class="header__notify-description">Flower arranging is a hobby and joy for many, but often flowers only stay fresh and beautiful for a few days…</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./assets/img/sanpham/cay-thong-noel-nho.jpg" alt="Ohui" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Christmas is coming, LARGE SALE!!</span>
+                                            <span class="header__notify-description">Celebrating Christmas, our products are discounted up to 70%!!! Buy now</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Kết thúc DS thông báo -->
+                            <footer class="header__notify-footer">
+                                <a href="" class="header__notify-footer-btn">See all</a>
+                            </footer>
+                        </div>
+                        <!-- End thanh thông báo -->
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                            Help
+                        </a>
+                    </li>
+                    <!-- Khi chưa login tài khoản -->
+                    <!-- <li class="login">
+                        <a href="/login.html" class="header__navbar-item header__navbar-item__strong header__navbar-item--separate">Log in</a>
+                    </li>
+                    <li class="signup">
+                        <a href="/signup.html" class="header__navbar-item header__navbar-item__strong">Log out</a>
+                    </li> -->
+                    <!-- End chưa login tài khoản -->
+                    <!-- Đã login tài khoản -->
+                    <li class="header__navbar-item header__navbar-user">
+                        <img src="./assets/img/avt_user/no-avatar.png" alt="" class="header__navbar-user-img">
+                        <span class="header__navbar-user-name">Reji2338</span>
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item">
+                                <a href="" class="header__navbar-user-item-link">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>My Account</span>
+                                </a>
+                            </li>
+                            <li class="header__navbar-user-item">
+                                <a href="cart.html" class="header__navbar-user-item-link">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    <span>My Cart</span>
+                                </a>
+                            </li>
+                            <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                <a href="login.html" class="header__navbar-user-item-link">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <span>Log out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- End chưa login tài khoản -->
+                </ul>
+                <!-- End Bar 2 -->
+            </nav>
+            <!-- End thanh bar phụ -->
+            <!-- Banner slogan -->
+            <a href="index.html">
+                <div class="header__slogan"></div>
+            </a>
+            <!-- End banner slogan -->
+        </header>
+        <!-- END HEADER -->
+
+        <!-- Thanh bar chính -->
+        <nav class="header__main-navbar">
+            <!-- Search -->
+            <div class="header__search">
+                <a href="search_advanced.html">
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </a>
+                <div class="header__khung-search">
+                    <input type="text" class="header__search-input" placeholder="Type to search..." 
+                    style=" white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                            font-family: 'Comfortaa', sans-serif;"
+                    >
+                    <!-- Search History -->
+                    <div class="header__search-history">
+                        <h3 class="header__search--history-heading">History</h3>
+                        <ul class="header__search-history-list">
+                            <li class="header__search-history-item">
+                                <a href="">small flower for Christmas/a>
+                            </li>
+                            <li class="header__search-history-item">
+                                <a href="">White tulip</a>
+                            </li>
+                            <li class="header__search-history-item">
+                                <a href="">Birthday's flower</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Search History -->
+            </div>
+            <!-- End search -->
+            <!-- Menu -->
+            <ul class="header__main-navbar-list">
+                <li class="header__main-navbar-item header__main-navbar-now">
+                    <a href="index.html" class="main-navbar__link">
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li class="header__main-navbar-item header__main-navbar-more">
+                    <a href="flowers.html" class="main-navbar__link">
+                        <span>FLOWERS</span>
+                        <i class="header__main-navbar-icon fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="header__main-navbar-item__list">
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Tulips</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Roses</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Lilis</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Baby Flowers</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__main-navbar-item header__main-navbar-more">
+                    <a href="flowers.html" class="main-navbar__link">
+                        <span>OCCASIONS</span>
+                        <i class="header__main-navbar-icon fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="header__main-navbar-item__list">
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Birthday</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Anniversary</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Graduation</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Thank you</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__main-navbar-item header__main-navbar-more">
+                    <a href="flowers.html" class="main-navbar__link">
+                        <span>GIFT</span>
+                        <i class="header__main-navbar-icon fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="header__main-navbar-item__list">
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Chocolate</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Bear</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Balloon</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Card</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__main-navbar-item">
+                    <a href="index.html" class="main-navbar__link">
+                        <span>ABOUT US</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- End menu -->
+            <!-- Cart -->
+            <div class="header__cart">
+                <a href="#shop-now" class="header__cart-wrap">
+                    <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                    <span class="header__cart-title">Shop Now</span>
+                </a>
+            </div>
+            <!-- End cart -->
+        </nav>
+        <!-- End thanh bar chính -->
+
+        <!-- CONTAINER -->
+        <div class="container">
+            <!-- Banner Heading -->
+            <div class="grid">
+                <div class="grid__row container__banner">
+                    <div class="grid__column-12_12">
+                        <img src="./assets/img/container-banner/banner_gif.gif" alt="Banner hoa" class="container__banner-chinh">
+                        <div class="container__banner-information">
+                            <div class="container__banner-title">
+                                <h1>Welcome to <span>Flo</span>wers</h1>
+                                <h3>- Where nature meets Artistry -</h3>
+                            </div>
+                            <div class="container__banner-text">
+                                At <span>Flowers</span>, we bring the beauty of nature to your doorstep. Our shop is a treasure trove of vibrant <span>Flowers</span>, each one a testament to nature’s artistry. We take pride in our exceptional service and our commitment to providing the freshest, most beautiful floral arrangements. Whether you’re celebrating a special occasion or simply want to brighten your day, <span>Flowers</span> is your destination for nature’s finest. Experience the joy of flowers at <span>Flowers</span> today.
+                            </div>
+                            <div class="container__banner-extra">
+                                <div class="banner-extra1">
+                                    Click
+                                    <a href="index.html">here</a>
+                                    for more information about us
+                                </div>
+                                <div class="banner-extra2">
+                                    Or just scroll down to shop now
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container__banner-policy">
+                            <div class="grid__column-4_10 container__banner-policy-item">
+                                <img src="./assets/img/container-banner/sub/freeship.png" alt="freeship" class="policy-item-img">
+                                <div class="policy-item-content">
+                                    <div class="policy-item-content-title">FREESHIP</div>
+                                    <div class="policy-item-content-text">With orders from $200, you will receive free delivery</div>
+                                </div>
+                            </div>
+                            <div class="grid__column-4_10 container__banner-policy-item">
+                                <img src="./assets/img/container-banner/sub/time.png" alt="time" class="policy-item-img">
+                                <div class="policy-item-content">
+                                    <div class="policy-item-content-title">On time</div>
+                                    <div class="policy-item-content-text">Ensure on-time delivery or rush delivery in 2 hours under 10km</div>
+                                </div>
+                            </div>
+                            <div class="grid__column-4_10 container__banner-policy-item">
+                                <img src="./assets/img/container-banner/sub/money.png" alt="payment" class="policy-item-img">
+                                <div class="policy-item-content">
+                                    <div class="policy-item-content-title">Convenient payment</div>
+                                    <div class="policy-item-content-text">Payment by cash or bank transfer is possible</div>
+                                </div>
+                            </div>
+                            <div class="grid__column-4_10 container__banner-policy-item">
+                                <img src="./assets/img/container-banner/sub/shield.png" alt="guaranteed" class="policy-item-img policy-guaranteed">
+                                <div class="policy-item-content">
+                                    <div class="policy-item-content-title">Guaranteed</div>
+                                    <div class="policy-item-content-text">Guarantee that flowers will be fresh when you receive</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Banner Heading -->
+            <div id="shop-now">
+                <!-- Category -->
+                <div class="category">
+                    <div class="grid">
+                        <div class="grid__row">
+                            <div class="container__category-heading">
+                                <h4 class="container__category-title">- Our collection -</h4>
+                            </div>
+                            <ul class="container__category-danhsach">
+                                <li class="grid__column-4_12 container__category-item">
+                                    <a href="flowers.html" class="container__category-item-link">
+                                        <img src="./assets/img/sanpham/container-collection/flowers.webp" alt="example flowers" class="container__category-item-img">
+                                        <div class="container__category-item-content">
+                                            <div class="container__category-item-content-label">Flowers</div>
+                                            <h8>See All</h8>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="grid__column-4_12 container__category-item">
+                                    <a href="flowers.html" class="container__category-item-link">
+                                        <img src="./assets/img/sanpham/container-collection/occasions.webp" alt="example flowers" class="container__category-item-img">
+                                        <div class="container__category-item-content">
+                                            <div class="container__category-item-content-label">Occasions</div>
+                                            <h8>See All</h8>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="grid__column-4_12 container__category-item">
+                                    <a href="flowers.html" class="container__category-item-link">
+                                        <img src="./assets/img/sanpham/container-collection/gifts.webp" alt="example flowers" class="container__category-item-img">
+                                        <div class="container__category-item-content">
+                                            <div class="container__category-item-content-label">Gifts</div>
+                                            <h8>See All</h8>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Category -->
+                <!-- Product -->
+                <div class="grid">
+                    <!-- Best Seller -->
+                    <div class="grid__row product__index product__bestseller">
+                        <div class="product__heading">
+                            <div class="product__index-title">
+                                <h4>- Meet out Best Sellers -</h4>
+                            </div>
+                            <div class="product__index-pagination">
+                                <span class="product__index-page-num">
+                                    <span class="product__index-page-current">1</span>/3
+                                </span>
+                                <div class="product__index-page-control">
+                                    <a href="" class="product__index-page-btn product__index-page-btn--disable">
+                                        <i class="product__index-page-icon fa-solid fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="product__index-page-btn">
+                                        <i class="product__index-page-icon fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="product__index-container">
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">All in Bloom</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/smell-th-roses.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">Smell the Roses</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/the-secrete-garden.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">The Secret Garden</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End best seller -->
+                    <!-- New product -->
+                    <div class="grid__row product__index product__new">
+                        <div class="product__heading">
+                            <div class="product__index-title">
+                                <h4>- New products may be you love -</h4>
+                            </div>
+                            <div class="product__index-pagination">
+                                <span class="product__index-page-num">
+                                    <span class="product__index-page-current">3</span>/4
+                                </span>
+                                <div class="product__index-page-control">
+                                    <a href="" class="product__index-page-btn">
+                                        <i class="product__index-page-icon fa-solid fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="product__index-page-btn">
+                                        <i class="product__index-page-icon fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="product__index-container">
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">All in Bloom</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">Smell the Roses</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">The Secret Garden</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End new product -->
+                    <!-- Flowers -->
+                    <div class="grid__row product__index product__category-flowers">
+                        <div class="product__heading">
+                            <div class="product__index-title">
+                                <h4>- Flowers -</h4>
+                            </div>
+                            <a href="flowers.html" class="product__index-see-all">
+                                <span>See All</span>
+                            </a>
+                        </div>
+                        <ul class="product__index-container">
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">All in Bloom</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">Smell the Roses</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">The Secret Garden</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Flowers -->
+                    <!-- Occasions -->
+                    <div class="grid__row product__index product__category-occasions">
+                        <div class="product__heading">
+                            <div class="product__index-title">
+                                <h4>- Occasions -</h4>
+                            </div>
+                            <a href="flowers.html" class="product__index-see-all">
+                                <span>See All</span>
+                            </a>
+                        </div>
+                        <ul class="product__index-container">
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">All in Bloom</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">Smell the Roses</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">The Secret Garden</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Occasions -->
+                    <!-- Gifts -->
+                    <div class="grid__row product__index product__category-gifts">
+                        <div class="product__heading">
+                            <div class="product__index-title">
+                                <h4>- Gifts -</h4>
+                            </div>
+                            <a href="flowers.html" class="product__index-see-all">
+                                <span>See All</span>
+                            </a>
+                        </div>
+                        <ul class="product__index-container">
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">All in Bloom</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">Smell the Roses</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="grid__column-4_12 product__index-item">
+                                <a href="details_product.html" class="product__index-item-link">
+                                    <img src="./assets/img/sanpham/best-seller/all-in-bloom.jpg" alt="" class="product__index-item-img">
+                                    <div class="product__index-item-content">
+                                        <h4 class="product__index-item-label">The Secret Garden</h4>
+                                        <h6 class="product__index-item-cost">$30.00</h6>
+                                        <div class="product__index-item-extra">More info</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Gifts -->
+                </div>
+                <!-- End Product -->
+            </div>
+            <!-- Phần extra -->
+            <div class="grid__row container__extra">
+                <div class="container__text">
+                    <div class="container__extra-title">
+                        <i class="container__extra-icon fa-regular fa-envelope"></i>
+                        <span>Don’t miss out</span>
+                    </div>
+                    <div class="container__extra-content">
+                        <p>Register to receive exclusive offers tailored to you, plus rewards and promotions before anyone else. Just select ‘YES’ on the next page and never miss a thing.</p>
+                    </div>
+                </div>
+                <!-- Khung enter email -->
+                <div class="container__extra-khung-mail">
+                    <div class="container__extra-email">
+                        <input type="text" class="container__extra-email-input" placeholder="Write your email address here..." 
+                        style=" white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis; 
+                                font-family: 'Comfortaa', sans-serif;"
+                        >
+                    </div>
+                    <button class="container__extra-email-btn btn btn--primary">
+                        <a href="" class="container__extra-email-link">Get Started</a>
+                    </button>
+                </div>
+                <!-- End email -->
+            </div>
+            <!-- End phần extra -->
+        </div>
+        <!-- END CONTAINER -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <!-- Row 1 -->
+            <div class="grid">
+                <div class="grid__row">
+                    <!-- P1 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Looking for help ?</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Help center</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Shopping guide</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Site map</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Product recalls</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Advice before you buy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P1 -->
+                    <!-- P2 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Delivery & Returns</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Where's my order?</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Delivery & collection</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Same Day Delivery</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Recycle your packaging</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P2 -->
+                    <!-- P3 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Customer Service</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">FAQs</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Payment Options</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">100% Guarantee</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Corporate Orders</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P3 -->
+                    <!-- P4 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Policies</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Privacy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Returns and Refunds</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Substitution</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Security</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P4 -->
+                    <!-- P5 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Follow us on</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P5 -->
+                </div>
+            </div>
+            <!-- End row 1 -->
+            <!-- Row 2 -->
+            <div class="footer__bottom">
+                <div class="grid">
+                    <!-- <i class="fa-regular fa-copyright"></i> -->
+                    <p class="footer__text">Contact us: 1900 633 045 | help@flowers.vn</p>
+                    <p class="footer__text"> <span>©</span> 2023 - By Flowers</p>
+                </div>
+            </div>
+            <!-- End row 2 -->
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+</body>
+</html>

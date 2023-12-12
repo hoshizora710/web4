@@ -1,0 +1,298 @@
+
+/* Reset margin */
+* {
+    margin: 0;
+    padding: 0;
+  }
+/* Mất dấu chấm đầu danh sách ul, li */
+li {
+    list-style: none;
+}
+/* Bỏ dấu gạch chân của liên kết */
+a {
+    text-decoration: none;
+}
+  
+/* Các biến chung toàn file */
+:root {
+    --primary-color: rgb(255, 112, 117);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-grey: #B0B0B0;
+    --border-color: #dbdbdb;
+    --star-gold-color: #ffce3d;
+    
+    --text-color: #333;
+    --text-primary-color: rgb(180, 88, 99);
+
+    --header-height: 157px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height))
+}
+
+/* CSS chung */
+* {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%; /* = 10px = 1rem */
+    line-height: 1.6rem;
+    font-family: 'Comfortaa', sans-serif;
+    box-sizing: border-box;
+}
+input[type=text] {
+    color: var(--text-primary-color);
+  }
+/* RESPONSIVE */
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    /*  Nếu 1 lớp có kích thước > 1200px thì sẽ không bị đẩy vì width tối đa chỉ đc 100% là 1200px 
+        Nếu 1 lớp có kích thước < 1200px thì sẽ áp dụng max-width (tự giảm width vừa đúng bằng kích thước đó)
+    */
+    margin: 0 auto;
+    /* tự động căn giữa khối này khi nằm trong 1 khối khác */
+}
+.grid__full-width {
+    width: 100%;  /*Nếu muốn dùng full màn hình*/
+}
+/* Thẻ nào nằm trong class grid__row sẽ nằm trên cùng 1 hàng ngang */
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+/* sd x column trong 12 column */
+.grid__column-12_12 {
+    width: 100%;
+}
+.grid__column-10_12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+.grid__column-9_12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 75%;
+}
+.grid__column-8_12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 66.6667%;
+}
+.grid__column-6_12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+}
+.grid__column-4_12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.3333%;
+}
+/* 3 cột trong 12 column ~ 4 item trong 100% */
+.grid__column-3_12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+.grid__column-2_12 {
+    /* padding: 0; */
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+/* chia đều 4 item trong n column: 100% / 4 */
+.grid__column-4_10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+/* ~ 5 item trong n column */
+.grid__column-5_12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+/* 4 / 10 cột */
+.grid__column-4_10-column {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 40%;
+}
+/* 6 / 10 cột */
+.grid__column-6_10-column {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 60%;
+}
+
+/* Button style */
+.btn {
+    min-width: 124px;
+    height: 34px;
+    background-color: var(--white-color);
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    font-family: 'Comfortaa', sans-serif;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center;
+    line-height: 1.2rem;
+}
+.btn.btn-normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.btn.btn--size-s {
+    height: 32px;
+    font-size: 1.2rem;
+    padding: 0 8px;
+}
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+/* Nút vô hiệu hóa */
+.btn.btn--disable {
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
+}
+/* End button style */
+
+
+/* Animation */
+/* fadeIn (tự đặt tên): Hiệu ứng hiện dần lên */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* growth: Hiệu ứng lớn dần lên */
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+/* rightToLeft: Animetion trượt từ phải sang trái (chua thu) */
+@keyframes rightToLeft {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+
+/* SELECTION */
+.select-input {
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.select-input__label {
+    font-size: 1.4rem;
+}
+.select-input__icon {
+    font-size: 1.4rem;
+    color: #939393;
+    position: relative;
+    top: 1px;
+}
+.select-input:hover .select-input__list {
+    display: block;
+}
+.select-input__list {
+    position: absolute;
+    z-index: 1;
+    left: 0; right: 0;
+    top: 29px;
+    border-radius: 2px;
+    border: 1px solid #D3D3D3;
+    background-color: var(--white-color);
+    padding: 10px 16px;
+    list-style: none;
+    margin: 8px 0; /*tu them*/
+    /* Ẩn khi chưa dùng */
+    display: none;
+}
+/* Tạo cầu nối */
+.select-input__list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 100%;
+    height: 6px;
+    /* background-color: #333; */
+}
+.select-input__link {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 24px; /*tu them*/
+    display: block;
+    padding: 5px 0;
+    border-bottom: 1px solid #D3D3D3;
+}
+.select-input__link:last-child {
+    border: none;
+}
+.select-input__link:hover {
+    color: var(--primary-color);
+}
+
+/* END SELECTION */
+
+
+/* Pagination - Phân trang */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.pagination-item {
+    margin: 0 16px;
+}
+.pagination-item--active .pagination-item__link,
+.pagination-item__link:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: 200;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    border-radius: 2px;
+}
+/* End Pagination */

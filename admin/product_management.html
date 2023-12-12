@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers - Manage Products</title>
+    <!-- design CSS -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="product_management.html">
+    <!-- Fonts -->
+        <!-- chữ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <!-- icon -->
+        <link rel="stylesheet" href="./assets/font/font-icon/fontawesome-free-6.4.2-web/css/all.min.css">
+        <link  rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- HEADER -->
+        <header class="header">
+            <!-- Thanh bar phụ -->
+            <nav class="header__navbar">
+                <!-- Go to shop -->
+                <div class="header__cart">
+                    <!-- <a href="/user/index.html" class="header__cart-wrap">
+                        <span class="header__cart-title">Go to shop</span>
+                    </a> -->
+                </div>
+                <!-- End Go to shop -->
+                <!-- Bar 2 -->
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-regular fa-bell"></i>
+                            Notify
+                        </a>
+                        <!-- Trong thanh thông báo -->
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>New notify</h3>
+                            </header>
+                            <!-- DS thông báo -->
+                            <div class="header__notify-list header__notify-nothing">
+                                <div class="header__notify-info">
+                                    <span class="header__notify-nothing__text">
+                                        Nothing here...
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Kết thúc DS thông báo -->
+                            <footer class="header__notify-footer">
+                                <a href="" class="header__notify-footer-btn">See all</a>
+                            </footer>
+                        </div>
+                        <!-- End thanh thông báo -->
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                            Help
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-user">
+                        <img src="./assets/img/avt_user/3.jpeg" alt="" class="header__navbar-user-img">
+                        <span class="header__navbar-user-name">Omyne2338</span>
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item">
+                                <a href="" class="header__navbar-user-item-link">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>My Account</span>
+                                </a>
+                            </li>
+                            <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                <a href="login.html" class="header__navbar-user-item-link">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <span>Log out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- End Bar 2 -->
+            </nav>
+            <!-- End thanh bar phụ -->
+            <!-- Banner slogan -->
+            <a href="admin.html">
+                <div class="header__slogan"></div>
+            </a>
+            <!-- End banner slogan -->
+        </header>
+        <!-- END HEADER -->
+
+        <!-- Thanh bar chính -->
+        <nav class="header__main-navbar">
+            <!-- Bar 1 -->
+            <input class="header-navbar__item header__navbar-category-phu" type="checkbox" id="toggle1">
+            <label for="toggle1" class="header__navbar-category-phu-label">
+                <span>Flowers</span>
+                <i class="fa-solid fa-layer-group"></i>
+            </label>
+            <div class="header__navbar-category-slidebar">
+                <div class="slidebar-category">
+                    <a href="admin.html" class="slidebar-category-header__link">
+                        <div class="slidebar-header">
+                            <i class="fa-solid fa-house"></i>
+                            <h3>- Flowers -</h3>
+                            <span>Home Page</span>
+                        </div>
+                    </a>
+                    <div class="slidebar-content">
+                        <!-- <div class="slidebar-profile">
+                            <div class="profile-img" style="background-image: url(./assets/img/avt_user/3.jpeg)"></div>
+                            <h4>David Green</h4>
+                        </div> -->
+                        <div class="slidebar-menu">
+                            <!-- List Manage -->
+                            <ul class="slidebar-menu__list">
+                                <li class="slidebar-menu__list-item">
+                                    <a href="business.html"  class="slidebar-menu__list-item__link">
+                                        <i class="fa-solid fa-chart-simple"></i>
+                                        <small>Business Situation</small>
+                                    </a>
+                                </li>
+                                <li class="slidebar-menu__list-item">
+                                    <a href="manage_user.html"  class="slidebar-menu__list-item__link">
+                                        <i class="fa-solid fa-user"></i>
+                                        <small>User Management</small>
+                                    </a>
+                                </li>
+                                <li class="slidebar-menu__list-item">
+                                    <a href="edit_product.html"  class="slidebar-menu__list-item__link">
+                                        <i class="fa-solid fa-box-open"></i>
+                                        <small>Product Management</small>
+                                    </a>
+                                </li>
+                                <li class="slidebar-menu__list-item">
+                                    <a href="manage_order.html"  class="slidebar-menu__list-item__link">
+                                        <i class="fa-solid fa-file-invoice"></i>
+                                        <small>Order Management</small>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- End list manage -->
+                            <!-- List setting -->
+                            <ul class="slidebar-menu__list">
+                                <li class="slidebar-menu__list-item2">
+                                    <a href=""  class="slidebar-menu__list-item__link">
+                                        <small>Setting</small>
+                                        <i class="fa-solid fa-gear"></i>
+                                    </a>
+                                </li>
+                                <li class="slidebar-menu__list-item2">
+                                    <a href="login.html"  class="slidebar-menu__list-item__link">
+                                        <small>Log out</small>
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- End list setting -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Bar 1 -->
+            <!-- Bar 2 goc phai -->
+            <div class="header-navbar__item header__gocphai">
+                <!-- Search -->
+                <div class="header__search">
+                    <a href="">
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </a>
+                    <div class="header__khung-search">
+                        <input type="text" class="header__search-input" placeholder="Type to search..." 
+                        style=" white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis; 
+                                font-family: 'Comfortaa', sans-serif;"
+                        >
+                    </div>
+                </div>
+                <!-- End Search -->
+                <!-- Account -->
+                <div class="header__account">
+                    <a href="" class="account-avt-link">
+                        <img src="./assets/img/avt_user/3.jpeg" alt="" class="account-avt-img">
+                    </a>
+                </div>
+                <!-- Account -->
+            </div>
+            <!-- End bar 2 goc phai -->
+        </nav>
+        <!-- End thanh bar chính -->
+
+        <!-- CONTAINER -->
+        <div class="container">
+            <div class="grid">
+                <!-- Phần chính -->
+                <div class="grid__row container__content">
+                    <!-- Danh mục - 2/12 cột -->
+                    <div class="grid__column-2_12 container-category-sticky">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                Category
+                                <a href="edit_product.html">
+                                    <i title="Edit your category" class="fa-solid fa-pen-to-square"></i>
+                                </a>
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="product_management.html" class="category-item__link">Flowers</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="product_management.html" class="category-item__link">Occasions</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="product_management.html" class="category-item__link">Gift</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- End danh mục -->
+                    <!-- Khung sản phẩm - 10/12 cột -->
+                    <div class="grid__column-10_12">
+                        <!-- Sản phẩm -->
+                        <div class="container__product">
+                            <div class="grid__row">
+                                <!-- SP 1 - 4sp trong 10 cột -->
+                                <div class="grid__column-4_10 container__product-item">
+                                    <a class=" container__product-item-first" href="edit_product.html">
+                                        <!-- Ảnh sp -->
+                                        <div class="container__product-item__img"
+                                            style="background-image: url(./assets/img/sanpham/tulip.jpg)">
+                                        </div>
+                                        <!-- Miêu tả sp -->
+                                        <h4 class="container__product-item__name">The Tilted Tulip</h4>
+                                        <!-- Giá -->
+                                        <div class="container__product-item__price">
+                                            <span class="container__product-item__price-current">$30.00</span>
+                                        </div>
+                                        <!-- Hành động của user -->
+                                        <div class="container__product-item__action">
+                                            <!-- Thêm vào giỏ hàng -->
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-regular fa-square-minus"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                    <span>Edit</span>
+                                                </div>
+                                            </a>
+                                            <!-- Thêm vào giỏ hàng -->
+                                        </div>
+                                        <!-- End hành động -->
+                                    </a>
+                                </div>
+                                <!-- End sp 1 -->
+                                <!-- SP 2 -->
+                                <div class="grid__column-4_10 container__product-item">
+                                    <a class=" container__product-item-first" href="edit_product.html">
+                                        <!-- Ảnh sp -->
+                                        <div class="container__product-item__img"
+                                            style="background-image: url(./assets/img/sanpham/tulip.jpg)">
+                                        </div>
+                                        <!-- Miêu tả sp -->
+                                        <h4 class="container__product-item__name">The Tilted Tulip</h4>
+                                        <!-- Giá -->
+                                        <div class="container__product-item__price">
+                                            <span class="container__product-item__price-current">$30.00</span>
+                                        </div>
+                                        <!-- Hành động của user -->
+                                        <div class="container__product-item__action">
+                                            <!-- Thêm vào giỏ hàng -->
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-regular fa-square-minus"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            </a>
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                    <span>Edit</span>
+                                                </div>
+                                            </a>
+                                            <!-- Thêm vào giỏ hàng -->
+                                        </div>
+                                        <!-- End hành động -->
+                                    </a>
+                                </div>
+                                <!-- End sp 2 -->
+                                <!-- SP 3 -->
+                                <div class="grid__column-4_10 container__product-item">
+                                    <a class=" container__product-item-first" href="edit_product.html">
+                                        <!-- Ảnh sp -->
+                                        <div class="container__product-item__img"
+                                            style="background-image: url(./assets/img/sanpham/tulip.jpg)">
+                                        </div>
+                                        <!-- Miêu tả sp -->
+                                        <h4 class="container__product-item__name">The Tilted Tulip</h4>
+                                        <!-- Giá -->
+                                        <div class="container__product-item__price">
+                                            <span class="container__product-item__price-current">$30.00</span>
+                                        </div>
+                                        <!-- Hành động của user -->
+                                        <div class="container__product-item__action">
+                                            <!-- Thêm vào giỏ hàng -->
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-regular fa-square-minus"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                    <span>Edit</span>
+                                                </div>
+                                            </a>
+                                            <!-- Thêm vào giỏ hàng -->
+                                        </div>
+                                        <!-- End hành động -->
+                                        <!-- Mục giảm giá -->
+                                        <div class="container__product-item__sale-off">
+                                            <span class="container__product-item__sale-off-percent">-20%</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- End sp 3 -->
+                                <!-- SP 4 -->
+                                <div class="grid__column-4_10 container__product-item">
+                                    <a class=" container__product-item-first" href="edit_product.html">
+                                        <!-- Ảnh sp -->
+                                        <div class="container__product-item__img"
+                                            style="background-image: url(./assets/img/sanpham/tulip.jpg)">
+                                        </div>
+                                        <!-- Miêu tả sp -->
+                                        <h4 class="container__product-item__name">The Tilted Tulip</h4>
+                                        <!-- Giá -->
+                                        <div class="container__product-item__price">
+                                            <span class="container__product-item__price-current">$30.00</span>
+                                        </div>
+                                        <!-- Hành động của user -->
+                                        <div class="container__product-item__action">
+                                            <!-- Thêm vào giỏ hàng -->
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-regular fa-square-minus"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                    <span>Edit</span>
+                                                </div>
+                                            </a>
+                                            <!-- Thêm vào giỏ hàng -->
+                                        </div>
+                                        <!-- End hành động -->
+                                        <!-- Mục giảm giá -->
+                                        <div class="container__product-item__sale-off">
+                                            <span class="container__product-item__sale-off-percent">-20%</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- End sp 4 -->
+                                <!-- SP 5 -->
+                                <div class="grid__column-4_10 container__product-item">
+                                    <a href="edit_product.html">
+                                        <!-- Ảnh sp -->
+                                        <div class="container__product-item__img"
+                                            style="background-image: url(./assets/img/sanpham/tulip.jpg)">
+                                        </div>
+                                        <!-- Miêu tả sp -->
+                                        <h4 class="container__product-item__name">The Tilted Tulip</h4>
+                                        <!-- Giá -->
+                                        <div class="container__product-item__price">
+                                            <span class="container__product-item__price-current">$30.00</span>
+                                        </div>
+                                        <!-- Hành động của user -->
+                                        <div class="container__product-item__action">
+                                            <!-- Thêm vào giỏ hàng -->
+                                            <a href="" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-regular fa-square-minus"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            </a>
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                    <span>Edit</span>
+                                                </div>
+                                            </a>
+                                            <!-- Thêm vào giỏ hàng -->
+                                        </div>
+                                        <!-- End hành động -->
+                                    </a>
+                                </div>
+                                <!-- End sp 5 -->
+                                <!-- SP 6 -->
+                                <div class="grid__column-4_10 container__product-item">
+                                    <a href="edit_product.html">
+                                        <!-- Ảnh sp -->
+                                        <div class="container__product-item__img"
+                                            style="background-image: url(./assets/img/sanpham/tulip.jpg)">
+                                        </div>
+                                        <!-- Miêu tả sp -->
+                                        <h4 class="container__product-item__name">The Tilted Tulip</h4>
+                                        <!-- Giá -->
+                                        <div class="container__product-item__price">
+                                            <span class="container__product-item__price-current">$30.00</span>
+                                        </div>
+                                        <!-- Hành động của user -->
+                                        <div class="container__product-item__action">
+                                            <!-- Thêm vào giỏ hàng -->
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-regular fa-square-minus"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                    <span>Edit</span>
+                                                </div>
+                                            </a>
+                                            <!-- Thêm vào giỏ hàng -->
+                                        </div>
+                                        <!-- End hành động -->
+                                        <!-- Mục giảm giá -->
+                                        <div class="container__product-item__sale-off">
+                                            <span class="container__product-item__sale-off-percent">-20%</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- End sp 6 -->
+                                <!-- SP 7 -->
+                                <div class="grid__column-4_10 container__product-item">
+                                    <a href="edit_product.html">
+                                        <!-- Ảnh sp -->
+                                        <div class="container__product-item__img"
+                                            style="background-image: url(./assets/img/sanpham/tulip.jpg)">
+                                        </div>
+                                        <!-- Miêu tả sp -->
+                                        <h4 class="container__product-item__name">The Tilted Tulip</h4>
+                                        <!-- Giá -->
+                                        <div class="container__product-item__price">
+                                            <span class="container__product-item__price-current">$30.00</span>
+                                        </div>
+                                        <!-- Hành động của user -->
+                                        <div class="container__product-item__action">
+                                            <!-- Thêm vào giỏ hàng -->
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-regular fa-square-minus"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                    <span>Edit</span>
+                                                </div>
+                                            </a>
+                                            <!-- Thêm vào giỏ hàng -->
+                                        </div>
+                                        <!-- End hành động -->
+                                    </a>
+                                </div>
+                                <!-- End sp 7 -->
+                                <!-- SP 8 -->
+                                <div class="grid__column-4_10 container__product-item">
+                                    <a href="edit_product.html">
+                                        <!-- Ảnh sp -->
+                                        <div class="container__product-item__img"
+                                            style="background-image: url(./assets/img/sanpham/tulip.jpg)">
+                                        </div>
+                                        <!-- Miêu tả sp -->
+                                        <h4 class="container__product-item__name">The Tilted Tulip</h4>
+                                        <!-- Giá -->
+                                        <div class="container__product-item__price">
+                                            <span class="container__product-item__price-current">$30.00</span>
+                                        </div>
+                                        <!-- Hành động của user -->
+                                        <div class="container__product-item__action">
+                                            <!-- Thêm vào giỏ hàng -->
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-regular fa-square-minus"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                    <span>Edit</span>
+                                                </div>
+                                            </a>
+                                            <!-- Thêm vào giỏ hàng -->
+                                        </div>
+                                        <!-- End hành động -->
+                                    </a>
+                                </div>
+                                <!-- End sp 8 -->
+                                <!-- SP 9 -->
+                                <div class="grid__column-4_10 container__product-item">
+                                    <a href="edit_product.html">
+                                        <!-- Ảnh sp -->
+                                        <div class="container__product-item__img"
+                                            style="background-image: url(./assets/img/sanpham/tulip.jpg)">
+                                        </div>
+                                        <!-- Miêu tả sp -->
+                                        <h4 class="container__product-item__name">The Tilted Tulip</h4>
+                                        <!-- Giá -->
+                                        <div class="container__product-item__price">
+                                            <span class="container__product-item__price-current">$30.00</span>
+                                        </div>
+                                        <!-- Hành động của user -->
+                                        <div class="container__product-item__action">
+                                            <!-- Thêm vào giỏ hàng -->
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-regular fa-square-minus"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                    <span>Edit</span>
+                                                </div>
+                                            </a>
+                                            <!-- Thêm vào giỏ hàng -->
+                                        </div>
+                                        <!-- End hành động -->
+                                    </a>
+                                </div>
+                                <!-- End sp 9 -->
+                                <!-- SP 10 -->
+                                <div class="grid__column-4_10 container__product-item">
+                                    <a href="edit_product.html">
+                                        <!-- Ảnh sp -->
+                                        <div class="container__product-item__img"
+                                            style="background-image: url(./assets/img/sanpham/tulip.jpg)">
+                                        </div>
+                                        <!-- Miêu tả sp -->
+                                        <h4 class="container__product-item__name">The Tilted Tulip</h4>
+                                        <!-- Giá -->
+                                        <div class="container__product-item__price">
+                                            <span class="container__product-item__price-current">$30.00</span>
+                                        </div>
+                                        <!-- Hành động của user -->
+                                        <div class="container__product-item__action">
+                                            <!-- Thêm vào giỏ hàng -->
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-regular fa-square-minus"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                    <span>Edit</span>
+                                                </div>
+                                            </a>
+                                            <!-- Thêm vào giỏ hàng -->
+                                        </div>
+                                        <!-- End hành động -->
+                                    </a>
+                                </div>
+                                <!-- End sp 10 -->
+                                <!-- SP 11 -->
+                                <div class="grid__column-4_10 container__product-item">
+                                    <a href="edit_product.html">
+                                        <!-- Ảnh sp -->
+                                        <div class="container__product-item__img"
+                                            style="background-image: url(./assets/img/sanpham/tulip.jpg)">
+                                        </div>
+                                        <!-- Miêu tả sp -->
+                                        <h4 class="container__product-item__name">The Tilted Tulip</h4>
+                                        <!-- Giá -->
+                                        <div class="container__product-item__price">
+                                            <span class="container__product-item__price-current">$30.00</span>
+                                        </div>
+                                        <!-- Hành động của user -->
+                                        <div class="container__product-item__action">
+                                            <!-- Thêm vào giỏ hàng -->
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-regular fa-square-minus"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                    <span>Edit</span>
+                                                </div>
+                                            </a>
+                                            <!-- Thêm vào giỏ hàng -->
+                                        </div>
+                                        <!-- End hành động -->
+                                    </a>
+                                </div>
+                                <!-- End sp 11 -->
+                                <!-- SP 12 -->
+                                <div class="grid__column-4_10 container__product-item">
+                                    <a href="edit_product.html">
+                                        <!-- Ảnh sp -->
+                                        <div class="container__product-item__img"
+                                            style="background-image: url(./assets/img/sanpham/tulip.jpg)">
+                                        </div>
+                                        <!-- Miêu tả sp -->
+                                        <h4 class="container__product-item__name">The Tilted Tulip</h4>
+                                        <!-- Giá -->
+                                        <div class="container__product-item__price">
+                                            <span class="container__product-item__price-current">$30.00</span>
+                                        </div>
+                                        <!-- Hành động của user -->
+                                        <div class="container__product-item__action">
+                                            <!-- Thêm vào giỏ hàng -->
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-regular fa-square-minus"></i>
+                                                    <span>Delete</span>
+                                                </div>
+                                            <a href="edit_product.html" class="container__product-item__cart-link">
+                                                <div class="container__product-item__cart">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                    <span>Edit</span>
+                                                </div>
+                                            </a>
+                                            <!-- Thêm vào giỏ hàng -->
+                                        </div>
+                                        <!-- End hành động -->
+                                    </a>
+                                </div>
+                                <!-- End sp 12 -->
+                            </div>
+                        </div>
+                        <!-- End sản phẩm -->
+                        <!-- Phân trang -->
+                        <ul class="pagination container__product-pagination">
+                            <!-- Nút chuyển tới đầu trang -->
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link pagination-item__icon">
+                                    <i class="pagination-item__icon fa-solid fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <!-- Các nút số trang -->
+                            <li class="pagination-item pagination-item--active">
+                                <a href="#" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">2</a>
+                            </li>
+                                <span class="pagination-item__link pagination-item__icon">...</span>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">5</a>
+                            </li>
+                            <!-- Nút chuyển tới cuối trang -->
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link pagination-item__icon">
+                                    <i class="pagination-item__icon fa-solid fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End phân trang -->
+                    </div>
+                    <!-- End khung sản phẩm -->
+                </div>
+                <!-- End phần chính -->
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+        
+        <!-- FOOTER -->
+        <footer class="footer">
+            <!-- Row 1 -->
+            <div class="grid">
+                <div class="grid__row">
+                    <!-- P1 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Looking for help ?</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Help center</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Shopping guide</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Site map</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Product recalls</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Advice before you buy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P1 -->
+                    <!-- P2 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Delivery & Returns</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Where's my order?</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Delivery & collection</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Same Day Delivery</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Recycle your packaging</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P2 -->
+                    <!-- P3 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Customer Service</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">FAQs</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Payment Options</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">100% Guarantee</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Corporate Orders</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P3 -->
+                    <!-- P4 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Policies</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Privacy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Returns and Refunds</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Substitution</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Security</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P4 -->
+                    <!-- P5 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Follow us on</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P5 -->
+                </div>
+            </div>
+            <!-- End row 1 -->
+            <!-- Row 2 -->
+            <div class="footer__bottom">
+                <div class="grid">
+                    <!-- <i class="fa-regular fa-copyright"></i> -->
+                    <p class="footer__text">Contact us: 1900 633 045 | help@flowers.vn</p>
+                    <p class="footer__text"> <span>©</span> 2023 - By Flowers</p>
+                </div>
+            </div>
+            <!-- End row 2 -->
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+</body>
+</html>

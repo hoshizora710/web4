@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers - Shopping Cart</title>
+    <!-- design CSS -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+    <!-- Fonts -->
+        <!-- chữ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <!-- icon -->
+        <link rel="stylesheet" href="./assets/font/font-icon/fontawesome-free-6.4.2-web/css/all.min.css">
+        <link  rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- HEADER -->
+        <header class="header">
+            <!-- Thanh bar phụ -->
+            <nav class="header__navbar">
+                <!-- Bar 1 -->
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--separate">
+                        <span>HOTLINE: 1900 633 045</span>
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header__navbar-title--no-pointer">Contact us :</span>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-regular fa-envelope"></i>
+                            <span>help@flowers.vn</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End Bar 1 -->
+                <!-- Bar 2 -->
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-regular fa-bell"></i>
+                            Notify
+                        </a>
+                        <!-- Trong thanh thông báo -->
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>New notify</h3>
+                            </header>
+                            <!-- DS thông báo -->
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./assets/img/sanpham/bo-hoa-thach-thao-tim-miracle.jpg" alt="Ohui" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">(NEW) Miracle - The Embodiment of Love</span>
+                                            <span class="header__notify-description">The Miracle bouquet, designed with purple statice flowers, symbolizes everlasting love, cuteness, strength, and miracles…</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./assets/img/sanpham/hoa-tim.jpg" alt="Ohui" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Revealing the super easy secret to keeping flowers fresh that not everyone knows</span>
+                                            <span class="header__notify-description">Flower arranging is a hobby and joy for many, but often flowers only stay fresh and beautiful for a few days…</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./assets/img/sanpham/cay-thong-noel-nho.jpg" alt="Ohui" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Christmas is coming, LARGE SALE!!</span>
+                                            <span class="header__notify-description">Celebrating Christmas, our products are discounted up to 70%!!! Buy now</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Kết thúc DS thông báo -->
+                            <footer class="header__notify-footer">
+                                <a href="" class="header__notify-footer-btn">See all</a>
+                            </footer>
+                        </div>
+                        <!-- End thanh thông báo -->
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                            Help
+                        </a>
+                    </li>
+                    <!-- Khi chưa login tài khoản -->
+                    <!-- <li class="login">
+                        <a href="/login.html" class="header__navbar-item header__navbar-item__strong header__navbar-item--separate">Log in</a>
+                    </li>
+                    <li class="signup">
+                        <a href="/signup.html" class="header__navbar-item header__navbar-item__strong">Log out</a>
+                    </li> -->
+                    <!-- End chưa login tài khoản -->
+                    <!-- Đã login tài khoản -->
+                    <li class="header__navbar-item header__navbar-user">
+                        <img src="./assets/img/avt_user/no-avatar.png" alt="" class="header__navbar-user-img">
+                        <span class="header__navbar-user-name">Reji2338</span>
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item">
+                                <a href="" class="header__navbar-user-item-link">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span>My Account</span>
+                                </a>
+                            </li>
+                            <li class="header__navbar-user-item">
+                                <a href="cart.html" class="header__navbar-user-item-link">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    <span>My Cart</span>
+                                </a>
+                            </li>
+                            <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                <a href="login.html" class="header__navbar-user-item-link">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <span>Log out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- End chưa login tài khoản -->
+                </ul>
+                <!-- End Bar 2 -->
+            </nav>
+            <!-- End thanh bar phụ -->
+            <!-- Banner slogan -->
+            <a href="index.html">
+                <div class="header__slogan"></div>
+            </a>
+            <!-- End banner slogan -->
+        </header>
+        <!-- END HEADER -->
+
+        <!-- Thanh bar chính -->
+        <nav class="header__main-navbar">
+            <!-- Search -->
+            <div class="header__search">
+                <a href="search_advanced.html">
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </a>
+                <!-- Search History -->
+                <div class="header__khung-search">
+                    <input type="text" class="header__search-input" placeholder="Type to search..." 
+                    style=" white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                            font-family: 'Comfortaa', sans-serif;"
+                    >
+                    <div class="header__search-history">
+                        <h3 class="header__search--history-heading">History</h3>
+                        <ul class="header__search-history-list">
+                            <li class="header__search-history-item">
+                                <a href="">small flower for Christmas/a>
+                            </li>
+                            <li class="header__search-history-item">
+                                <a href="">White tulip</a>
+                            </li>
+                            <li class="header__search-history-item">
+                                <a href="">Birthday's flower</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Search History -->
+            </div>
+            <!-- End search -->
+            <!-- Menu -->
+            <ul class="header__main-navbar-list">
+                <li class="header__main-navbar-item">
+                    <a href="index.html" class="main-navbar__link">
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li class="header__main-navbar-item header__main-navbar-more">
+                    <a href="flowers.html" class="main-navbar__link">
+                        <span>FLOWERS</span>
+                        <i class="header__main-navbar-icon fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="header__main-navbar-item__list">
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Tulips</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Roses</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Lilis</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Baby Flowers</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__main-navbar-item header__main-navbar-more">
+                    <a href="flowers.html" class="main-navbar__link">
+                        <span>OCCASIONS</span>
+                        <i class="header__main-navbar-icon fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="header__main-navbar-item__list">
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Birthday</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Anniversary</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Graduation</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Thank you</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__main-navbar-item header__main-navbar-more">
+                    <a href="flowers.html" class="main-navbar__link">
+                        <span>GIFT</span>
+                        <i class="header__main-navbar-icon fa-solid fa-sort-down"></i>
+                    </a>
+                    <ul class="header__main-navbar-item__list">
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Chocolate</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Bear</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Balloon</a>
+                        </li>
+                        <li class="navbar-item__list-item">
+                            <a href="flowers.html">Card</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__main-navbar-item">
+                    <a href="index.html" class="main-navbar__link">
+                        <span>ABOUT US</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- End menu -->
+            <!-- Cart -->
+            <div class="header__cart">
+                <div class="header__cart-wrap">
+                    <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                    <!-- No Cart (header__cart-list-no-cart) -->
+                    <!-- <span class="header__cart-notice">0</span>
+                    <div class="header__cart-list header__cart-list-no-cart">
+                        <img src="./assets/img/cart-rong/gioHangRong.png" alt="Giỏ hàng trống" class="header__cart-no-cart-img">
+                        <span class="header__cart-list-no-cart-mess">
+                            You don't have any product. Buy something!
+                        </span>
+                    </div> -->
+                    <!-- End No Cart -->
+                    <!-- Cart has Product -->
+                    <span class="header__cart-notice">3</span>
+                    <div class="header__cart-list">
+                        <h4 class="header__cart-heading">Your selection here</h4>
+                        <ul class="header__cart-list-item">
+                            <!-- SP 1: -->
+                            <li class="header__cart-item">
+                                <!-- Img product -->
+                                <img src="./assets/img/cart-list-sp/baby-breath-bouquet.webp" alt="Baby Flowers" class="header__cart-img">
+                                <!-- Info product -->
+                                <div class="header__cart-item-info">
+                                    <!-- Head -->
+                                    <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Baby's Breath Bouquet</h5>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">$75.00</span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-qnt">2</span>
+                                        </div>
+                                    </div>
+                                    <!-- Body -->
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-description">Color: Pink, Size: Small</span>
+                                        <span class="header__cart-item-remove">Delete</span>
+                                    </div>
+                                </div>
+                                <!-- End info -->
+                            </li>
+                            <!-- End SP 1 -->
+                            <!-- SP 2: -->
+                            <li class="header__cart-item">
+                                <!-- Img product -->
+                                <img src="./assets/img/cart-list-sp/sunflower.webp" alt="Sun Flowers" class="header__cart-img">
+                                <!-- Info product -->
+                                <div class="header__cart-item-info">
+                                    <!-- Head -->
+                                    <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Sunflowers 🌻 Bouquet</h5>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">$55.00</span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-qnt">4</span>
+                                        </div>
+                                    </div>
+                                    <!-- Body -->
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-description">Size: 15 Stems Sunflower</span>
+                                        <span class="header__cart-item-remove">Delete</span>
+                                    </div>
+                                </div>
+                                <!-- End info -->
+                            </li>
+                            <!-- End SP 2 -->
+                            <!-- SP 3: -->
+                            <li class="header__cart-item">
+                                <!-- Img product -->
+                                <img src="./assets/img/cart-list-sp/congratulationrosehatbox.webp" alt="Phấm má hồng" class="header__cart-img">
+                                <!-- Info product -->
+                                <div class="header__cart-item-info">
+                                    <!-- Head -->
+                                    <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Balloon Rose Hatbox Congratulations</h5>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">$189.00</span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-qnt">1</span>
+                                        </div>
+                                    </div>
+                                    <!-- Body -->
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-description">Size: Medium</span>
+                                        <span class="header__cart-item-remove">Delete</span>
+                                    </div>
+                                </div>
+                                <!-- End info -->
+                            </li>
+                            <!-- End SP 3 -->
+                        </ul>
+                        <!-- Xem giỏ hàng -->
+                        <a href="cart.html" class="header__cart-view-cart btn btn--primary">See Cart</a>
+                        <!-- End xem giỏ hàng -->
+                    </div>
+                    <!-- End Cart has Product -->
+                    <span class="header__cart-title">My Cart</span>
+                </div>
+            </div>
+            <!-- End cart -->
+        </nav>
+        <!-- End thanh bar chính -->
+
+        <!-- CONTAINER -->
+        <div class="container">
+            <div class="grid">
+                <!-- Phần đầu -->
+                <div class="grid__row container__header">
+                    <h2 class="container__header-title">- Payment details -</h2>
+                </div>
+                <!-- End phần đầu -->
+                <!-- Phần chính -->
+                <div class="grid__row container__content">
+                    <!-- Bảng 1: list đồ trong giỏ hàng - 8/12 cột -->
+                    <div class="grid__column-8_12 container__cart-product">
+                        <div class="cart-form__title">BILLING INFORMATION</div>
+                        <div class="cart-form__payment">
+                            <!-- Thông tin cá nhân -->
+                            <div class="form-item payment-info">
+                                <div class="form__payment-label">
+                                    <h2>1. Customer's Information</h2>
+                                </div>
+                                <div class="form__payment-content">
+                                    <div class="payment-content_item form__content-name"><span>Name:</span> Ajex Polemn</div>
+                                    <div class="payment-content_item form__content-phone"><span>Phone:</span> 190028873</div>
+                                    <div class="payment-content_item form__content-address"><span>Address:</span> 123 Ajuosun Distric 1</div>
+                                </div>
+                                <div class="form__payment-infl-extra">
+                                    <a href="">Edit</a>
+                                </div>
+                            </div>
+                            <!-- Thông tin địa chỉ -->
+                            <div class="form-item form__payment-address">
+                                <div class="form__payment-label">
+                                    <h2>2. Delivery address</h2>
+                                </div>
+                                <div class="form__payment-content">
+                                    <ul class="cart__payment-address-list">
+                                        <li class="payment-content_item cart__payment-address-item">
+                                            <input type="radio" name="address" value="current" id="payment_address">
+                                            <label for="Address">Use current address</label>
+                                        </li>
+                                        <li class="payment-content_item cart__payment-address-item">
+                                            <input type="radio" name="address" value="another" id="payment_address">
+                                            <label for="Address">Use another address</label>
+                                            <div class="payment_address-input">
+                                                <textarea id="myTextArea" placeholder="Enter your new address here..."></textarea>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Phương thức trả tiền -->
+                            <div class="form-item form__payment-method">
+                                <div class="form__payment-label">
+                                    <h2>3. Payment method</h2>
+                                </div>
+                                <div class="form__payment-content">
+                                    <ul class="cart__payment-method-list">
+                                        <li class="payment-content_item cart__payment-method-item">
+                                            <input type="radio" name="method" value="bank">
+                                            <label for="Method">Bank Transfer</label>
+                                        </li>
+                                        <li class="payment-content_item cart__payment-method-item">
+                                            <input type="radio" name="method" value="cash">
+                                            <label for="Method">Pay in cash</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Lời nhắn -->
+                            <div class="form-item form__payment-mess">
+                                <div class="form__payment-label">
+                                    <h2>4. Your message</h2>
+                                </div>
+                                <div class="form__payment-content">
+                                    <ul class="cart__payment-mess-list">
+                                        <li class="payment-content_item cart__payment-mess-item">
+                                            <input type="checkbox" name="mess" value="another" id="payment_mess">
+                                            <label for="Mess">Do you want to write a card?</label>
+                                            <div class="payment_mess-input">
+                                                <textarea id="myTextArea" placeholder="Write your card here..."></textarea>
+                                            </div>
+                                        </li>
+                                        <li class="payment-content_item cart__payment-mess-item">
+                                            <input type="checkbox" name="mess" value="current" id="payment_mess">
+                                            <label for="Mess">Do you want to send any notes for us?</label>
+                                            <div class="payment_mess-input">
+                                                <textarea id="myTextArea" placeholder="Write your mess here..."></textarea>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-form__more">
+                            <a href="cart.html" class="form__more-back">
+                                <i class="more-back__icon fa-solid fa-arrow-left-long"></i>
+                                <div class="more-back__text">Back</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End bảng 1 -->
+                    <!-- Bảng 2: Thanh toán giỏ hàng - 4/12 cột -->
+                    <div class="grid__column-4_12">
+                        <div class="cart_payment">
+                            <table class="cart-product__table">
+                                <caption><h2>Your order</h2></caption>
+                                <thead>
+                                    <tr>
+                                        <th class="cart__header cart-product-name">Product</th>
+                                        <th class="cart__header cart-product-price">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- SP 1 -->
+                                    <tr class="cart-product__item">
+                                        <td class="cart__body product__item-sanpham">
+                                            <h7 class="product__item-name">Baby's Breath Bouquet <span>x2</span></h7>
+                                        </td>
+                                        <td class="cart__body product__item-price">
+                                            <span>$75.00</span>
+                                        </td>
+                                    </tr>
+                                    <!-- End SP 1 -->
+                                    <!-- SP 2 -->
+                                    <tr class="cart-product__item">
+                                        <td class="cart__body product__item-sanpham">
+                                            <h7 class="product__item-name">Baby's Breath Bouquet <span>x2</span></h7>
+                                        </td>
+                                        <td class="cart__body product__item-price">
+                                            <span>$75.00</span>
+                                        </td>
+                                    </tr>
+                                    <!-- End SP 2 -->
+                                    <!-- SP 3 -->
+                                    <tr class="cart-product__item">
+                                        <td class="cart__body product__item-sanpham">
+                                            <h7 class="product__item-name">Baby's Breath Bouquet <span>x2</span></h7>
+                                        </td>
+                                        <td class="cart__body product__item-price">
+                                            <span>$75.00</span>
+                                        </td>
+                                    </tr>
+                                    <!-- End SP 3 -->
+                                    <!-- Sub total -->
+                                    <tr class="cart-product__item cart-sub__total">
+                                        <td class="cart__body product__item-sanpham">
+                                            <h7 class="product__item-name cart-sub__total-name">Sub total</h7>
+                                        </td>
+                                        <td class="cart__body product__item-price cart-sub__total-price">
+                                            <span>$750.00</span>
+                                        </td>
+                                    </tr>
+                                    <!-- Giảm giá -->
+                                    <tr class="cart-product__item cart-delivery">
+                                        <td class="cart__body product__item-sanpham">
+                                            <h7 class="product__item-name cart-sub__total-name">Discount form vouchers</h7>
+                                        </td>
+                                        <td class="cart__body product__item-sanpham cart-sub__total-price">
+                                            <span class="product__item-name cart-delivery-content">- $0.00</span>
+                                        </td>
+                                    </tr>
+                                    <!-- Giao hàng -->
+                                    <tr class="cart-product__item cart-delivery">
+                                        <td colspan="2" class="cart__body product__item-sanpham">
+                                            <h7 class="product__item-name cart-delivery-name">Delivery</h7>
+                                            <ul class="cart__payment-delivery-list">
+                                                <li class="cart__payment-delivery-item">
+                                                    <input type="radio" name="delivery" value="Store">
+                                                    <label for="Store">Receive at the store</label>
+                                                </li>
+                                                <li class="cart__payment-delivery-item">
+                                                    <input type="radio" name="delivery" value="Home">
+                                                    <label for="Store">Delivery at home</label>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <!-- Tổng tiền -->
+                                    <tr class="cart-product__item cart-total">
+                                        <td class="cart__body product__item-sanpham">
+                                            <h2 class="product__item-name cart-total-name">Total</h2>
+                                        </td>
+                                        <td class="cart__body product__item-price cart-total-price">
+                                            <span>$750.00</span>
+                                        </td>
+                                    </tr>
+                                    <!-- Nút thanh toán -->
+                                    <tr class="cart-product__payment-paybtn">
+                                        <td colspan="2">
+                                            <a href="buy.html" class="cart-product__paybtn-link">
+                                                <button class="cart-product__paybtn-btn">Buy</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <!-- End thanh toan -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- End bảng 2 -->
+                </div>
+                <!-- End phần chính -->
+                <!-- Phần extra -->
+                <div class="grid__row container__extra">
+                    <div class="container__text">
+                        <div class="container__extra-title">
+                            <i class="container__extra-icon fa-regular fa-envelope"></i>
+                            <span>Don’t miss out</span>
+                        </div>
+                        <div class="container__extra-content">
+                            <p>Register to receive exclusive offers tailored to you, plus rewards and promotions before anyone else. Just select ‘YES’ on the next page and never miss a thing.</p>
+                        </div>
+                    </div>
+                    <!-- Khung enter email -->
+                    <div class="container__extra-khung-mail">
+                        <div class="container__extra-email">
+                            <input type="text" class="container__extra-email-input" placeholder="Write your email address here..." 
+                            style=" white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis; 
+                                    font-family: 'Comfortaa', sans-serif;"
+                            >
+                        </div>
+                        <button class="container__extra-email-btn btn btn--primary">
+                            <a href="" class="container__extra-email-link">Get Started</a>
+                        </button>
+                    </div>
+                    <!-- End email -->
+                </div>
+                <!-- End phần extra -->
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <!-- Row 1 -->
+            <div class="grid">
+                <div class="grid__row">
+                    <!-- P1 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Looking for help ?</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Help center</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Shopping guide</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Site map</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Product recalls</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href=""class="footer-item__link">Advice before you buy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P1 -->
+                    <!-- P2 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Delivery & Returns</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Where's my order?</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Delivery & collection</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Same Day Delivery</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Recycle your packaging</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P2 -->
+                    <!-- P3 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Customer Service</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">FAQs</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Payment Options</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">100% Guarantee</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Corporate Orders</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P3 -->
+                    <!-- P4 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Policies</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Privacy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Returns and Refunds</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Substitution</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Security</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P4 -->
+                    <!-- P5 -->
+                    <div class="grid__column-5_12">
+                        <h3 class="footer__heading">Follow us on</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End P5 -->
+                </div>
+            </div>
+            <!-- End row 1 -->
+            <!-- Row 2 -->
+            <div class="footer__bottom">
+                <div class="grid">
+                    <!-- <i class="fa-regular fa-copyright"></i> -->
+                    <p class="footer__text">Contact us: 1900 633 045 | help@flowers.vn</p>
+                    <p class="footer__text"> <span>©</span> 2023 - By Flowers</p>
+                </div>
+            </div>
+            <!-- End row 2 -->
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+</body>
+</html>
